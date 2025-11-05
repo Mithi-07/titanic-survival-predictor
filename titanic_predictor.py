@@ -135,7 +135,7 @@ pipe = Pipeline(steps=[("preprocessor", preprocess), ("ensemble", ensemble)])
 cv = StratifiedKFold(n_splits=5, shuffle=True, random_state=42)
 scores = cross_val_score(pipe, X, y, cv=cv, scoring="accuracy")
 
-print(f"✅ Mean CV Accuracy: {scores.mean():.4f} ± {scores.std():.4f}")
+print(f"Mean CV Accuracy: {scores.mean():.4f} ± {scores.std():.4f}")
 
 # ---------------------------
 # Train full model
@@ -158,3 +158,4 @@ submission = pd.DataFrame({
 
 submission.to_csv("submission.csv", index=False)
 print("\n Submission file 'submission.csv' saved successfully!")
+
