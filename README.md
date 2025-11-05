@@ -8,7 +8,7 @@ This project analyzes passenger attributes—such as age, gender, ticket class, 
 ## Key Features
 - Robust preprocessing (missing values, encoding, scaling)
 - Focused feature set: `Pclass`, `Sex`, `Embarked`, `LogAge`, `LogFare`, `FamilySize`, `IsAlone`, `Title`
-- Machine Learning models used - LightGBM/XGBoost variants
+- Machine Learning models used - XGBoost, Random Forest, Logistic Regression
 - Stratified cross-validation for reliable accuracy estimates
 - Generates `submission.csv` for Kaggle upload
 
